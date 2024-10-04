@@ -10,4 +10,7 @@ public class EmailAlertListener {
     void saveFile() {
 
     }
+    public void  update (){
+        System.out.println("Send to e-mail");
+    }
 }
