@@ -1,5 +1,9 @@
 package org.exemple;
 
+import List.MyList;
+import List.MyNode;
+
+
 public class Main {
 public static void main(String[] args) {
 //        System.out.println("Hello world!");

@@ -1,4 +1,4 @@
-package org.exemple;
+package List;
 
 public interface ListStrategy <T>{
     MyNode<T> add(MyNode<T> head, MyNode<T> newMyNode);

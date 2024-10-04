@@ -1,4 +1,4 @@
-package org.exemple;
+package List;
 
 public class MyList <T> {
 
