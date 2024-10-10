@@ -1,18 +1,22 @@
 package List;
 
-public class StackStrategy <T> implements ListStrategy<T>{
+
+public class StackStrategy<T> implements ListStrategy<T> {
+
     @Override
     public MyNode<T> add(MyNode<T> head, MyNode<T> newMyNode) {
-        MyNode<T> current  = head;
-        if (head == null) {
-            head = newMyNode;
-        }
-        else {
-            newMyNode.setNext(head);
-            head = newMyNode;
-        }
-        return head;
+        newMyNode.setNext(head);
+        return newMyNode;
     }
+
+    @Override
+    public MyNode<T> remove(MyNode<T> head) {
+        if (head == null) {
+            return null;
+        }
+        return head.getNext();
+    }
+
 
     @Override
     public void remove(MyNode<T> head, MyNode<T> current) {

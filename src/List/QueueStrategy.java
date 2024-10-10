@@ -16,7 +16,17 @@ public class QueueStrategy<T> implements ListStrategy<T> {
     }
 
     @Override
+    public MyNode<T> remove(MyNode<T> head) {
+        if (head == null) {
+            return null;
+        }
+        return head.getNext();
+    }
+
+    @Override
     public void remove(MyNode<T> head, MyNode<T> current) {
 
     }
+
+
 }

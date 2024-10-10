@@ -1,7 +1,4 @@
-package org.exemple;
-
-import List.MyList;
-import List.MyNode;
+package List;
 
 
 public class Main {

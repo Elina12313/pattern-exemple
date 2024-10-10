@@ -1,16 +1,10 @@
 package Observ;
 
-public class EmailAlertListener {
-    private EventManager eventManager;
+public class EmailAlertListener implements  EventListener{
 
-    void openFile() {
 
-    }
-
-    void saveFile() {
-
-    }
-    public void  update (){
-        System.out.println("Send to e-mail");
+    @Override
+    public void  update (String event ){
+        System.out.println("Send to e-mail" + event);
     }
 }
